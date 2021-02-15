@@ -1,6 +1,5 @@
 
 # 🐳 Week 01-RNN
-<br>
 
 ### RNN이란?
 - RNN은 hidden node가 방향을 가진 엣지로 연결되어 순환구조를 이루는 인공신경망의 한 종류
@@ -25,7 +24,7 @@
 
 
 ### RNN의 활성화 함수 : tanh
-<p align="center"><img src="https://user-images.githubusercontent.com/33839093/107911371-ce815e00-6f9f-11eb-9460-17f970b7e576.png" width="100" height="200"></p>
+<img src="https://user-images.githubusercontent.com/33839093/107911371-ce815e00-6f9f-11eb-9460-17f970b7e576.png" width="100" height="200">
 
 선형함수 h(x) = c*x를 사용해 3층 네트워크를 쌓으면, y(x) = h(h(h(x))) 이므로 y(x) = c*c*c*x와 동일하다.
 
