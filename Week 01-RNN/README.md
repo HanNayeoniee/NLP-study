@@ -1,7 +1,10 @@
 
-# 🐳 Week 01-RNN
+### 🐳 Week 01-RNN
 
 ### RNN이란?
+<img src="https://user-images.githubusercontent.com/33839093/107915160-499a4280-6fa7-11eb-97e9-706075f5f03c.png">
+
+👉 그림에서 초록색이 RNN의 hidden layer에 해당하며, hidden layer는 1층 뿐만 아니라 여러층으로 쌓을 수 있다.
 - RNN은 hidden node가 방향을 가진 엣지로 연결되어 순환구조를 이루는 인공신경망의 한 종류
 - 순차 데이터(sequential data)는 데이터의 값 뿐만 아니라, 데이터의 순서도 중요함
 - 음성, 문자 등 순차적으로 등장하는 데이터 처리에 적합한 모델(기존의 NN, CNN은 sequential data를 처리할 수 없음)
@@ -24,7 +27,7 @@
 
 
 ### RNN의 활성화 함수 : tanh
-<img src="https://user-images.githubusercontent.com/33839093/107911371-ce815e00-6f9f-11eb-9460-17f970b7e576.png" width="100" height="200">
+<p align="center"><img src="https://user-images.githubusercontent.com/33839093/107911371-ce815e00-6f9f-11eb-9460-17f970b7e576.png" width="100" height="200"></p>
 
 선형함수 h(x) = c*x를 사용해 3층 네트워크를 쌓으면, y(x) = h(h(h(x))) 이므로 y(x) = c*c*c*x와 동일하다.
 
@@ -63,3 +66,8 @@ one-hot vector로 변환하면 [1,0,0,0], [0,1,0,0], [0,0,1,0], [0,0,0,1]로 표
 이전 state -> 다음 state로 넘어갈 때 gradient를 조금만 작게 해도 gradient가 0에 가깝게 되고, gradient를 조금만 크게 해도 gradient가 너무 커진다. gradient를 조절하기 어려움 😥
 👉 gradient를 상수로 넘기지 말고 gradient를 조절하는 gate를 달아서 조절하자 = LSTM
 gradient를 조절하는 gate에는 단순한 activation function이 아니라 하나의 network가 들어있음
+
+<br>
+##### 참고한 링크
+- [Sung Kim의 youtube강의 - NN의 꽃 RNN 이야기](https://www.youtube.com/watch?v=-SHPG_KMUkQ)
+- [ratsgo's blog - RNN과 LSTM을 이해해보자!](https://ratsgo.github.io/natural%20language%20processing/2017/03/09/rnnlstm/)
