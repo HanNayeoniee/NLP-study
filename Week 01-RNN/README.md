@@ -1,5 +1,5 @@
 
-### 🐳 Week 01-RNN
+# 🐳 Week 01-RNN
 
 ### RNN이란?
 <img src="https://user-images.githubusercontent.com/33839093/107915160-499a4280-6fa7-11eb-97e9-706075f5f03c.png">
