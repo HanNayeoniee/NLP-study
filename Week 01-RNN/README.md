@@ -68,7 +68,7 @@ one-hot vector로 변환하면 [1,0,0,0], [0,1,0,0], [0,0,1,0], [0,0,0,1]로 표
 gradient를 조절하는 gate에는 단순한 activation function이 아니라 하나의 network가 들어있음
 
 <br>
-##### 참고한 링크
+#### 참고한 링크
 
 - [Sung Kim의 youtube강의 - NN의 꽃 RNN 이야기](https://www.youtube.com/watch?v=-SHPG_KMUkQ)
 - [ratsgo's blog - RNN과 LSTM을 이해해보자!](https://ratsgo.github.io/natural%20language%20processing/2017/03/09/rnnlstm/)
