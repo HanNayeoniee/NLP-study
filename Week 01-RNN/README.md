@@ -69,5 +69,6 @@ gradient를 조절하는 gate에는 단순한 activation function이 아니라 �
 
 <br>
 ##### 참고한 링크
+
 - [Sung Kim의 youtube강의 - NN의 꽃 RNN 이야기](https://www.youtube.com/watch?v=-SHPG_KMUkQ)
 - [ratsgo's blog - RNN과 LSTM을 이해해보자!](https://ratsgo.github.io/natural%20language%20processing/2017/03/09/rnnlstm/)
