@@ -1,5 +1,5 @@
 
-### 🐳 Week 01-RNN
+# 🐳 Week 01-RNN
 <br>
 
 ### RNN이란?
