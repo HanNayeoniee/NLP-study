@@ -6,6 +6,7 @@
 - [RNN_longseq.ipynb](https://github.com/HanNayeoniee/NLP-study/blob/main/Week%2001-RNN/Week%2001-RNN_longseq.ipynb) : 특정 길이의 문장을 사용해 예측하기
 - [RNN_timeseries.ipynb](https://github.com/HanNayeoniee/NLP-study/blob/main/Week%2001-RNN/Week%2001-RNN_timeseries.ipynb) : 긴 문장 예측하기
 
+<br>
 
 ### 🦜 Week 02-LSTM
 - [Week_02-LSTM](https://github.com/HanNayeoniee/NLP-study/blob/main/Week%2002-LSTM/Week%2002-LSTM.md)
