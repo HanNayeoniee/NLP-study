@@ -9,4 +9,8 @@
 <br>
 
 ### 🦜 Week 02-LSTM
-- [Week_02-LSTM](https://github.com/HanNayeoniee/NLP-study/blob/main/Week%2002-LSTM/Week%2002-LSTM.md)
+- [Week_02-LSTM](https://github.com/HanNayeoniee/NLP-study/blob/main/Week%2002-LSTM/README.md)
+- [LSTM_char.ipynb](https://github.com/HanNayeoniee/NLP-study/blob/main/Week%2002-LSTM/LSTM_char.ipynb) : LSTM으로 다음 문자 예측하기
+- [LSTM_samsung.ipynb](https://github.com/HanNayeoniee/NLP-study/blob/main/Week%2002-LSTM/LSTM_samsung.ipynb) : LSTM으로 삼성전자 주가 예측하기
+
+<br>
