@@ -57,7 +57,7 @@ one-hot vector로 변환하면 [1,0,0,0], [0,1,0,0], [0,0,1,0], [0,0,0,1]로 표
 - [RNN_timeseries.ipynb](https://github.com/HanNayeoniee/NLP-study/blob/main/Week%2001-RNN/Week%2001-RNN_timeseries.ipynb) : 긴 문장 예측하기
 
 ### RNN의 문제점
-- 장기의존적(Long-Term Dependency) 문제점
+- 장기 의존(Long-Term Dependency) 문제점
 "하늘에 떠있는 구름"이라는 문장을 RNN이 학습한다면 "하늘에 떠있는"으로 "구름"이라는 단어를 유추할 수 있다.
 하지만, "나는 한국에서 자랐고 나는 한국어를 유창하게 한다"하는 문장이 있을 때, "한국어를 유창하게 한다"라는 문장을 유추할때 "나는 한국에서 자랐고"와 "나는 한국어를"문장이 비슷하기 때문에 RNN이 두 정보의 문맥을 연결하기 어렵다.
 👉 RNN을 깊이 쌓으면 학습시키는데 어려움이 있기 때문에, RNN 대신 LSTM과 GRU를 많이 사용한다.
