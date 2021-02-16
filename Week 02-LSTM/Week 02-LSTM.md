@@ -14,15 +14,15 @@
 - LSTM은 hidden state를 계산하는 식이 전통적인 RNN보다 복잡하고, cell state라는 값을 추가한 구조이다. (C<sub>t</sub> = t시점의 셀 상태)
 - LSTM은 RNN과 비교해 긴 시퀀스의 입력을 처리하는데 탁월한 성능을 보인다.
 - LSTM의 활성화 함수 sigmoid, tanh는 모두 비선형 함수
-  - sigmoid함수를 적용하면 0에서 1사이 값을 가지므로, 기억을 할지(1) 안할지(0) 정해준다.
-  -  tanh함수를 적용하면 -1애서 1사이 값을 가지므로 얼마나 기억할지 정해준다.
+  - sigmoid함수를 적용하면 0-1사이 값을 가지므로, 기억을 할지(1) 안할지(0) 정해준다.
+  -  tanh함수를 적용하면 -1-1사이 값을 가지므로 얼마나 기억할지 정해준다.
 
 
 ### input gate : 현재 정보를 기억하기 위한 게이트
 <img src="https://user-images.githubusercontent.com/33839093/108022030-1ae1a200-7063-11eb-9835-e279793c2729.png">
 
 - h<sub>t-1</sub>과 x<sub>t</sub>을 받아 시그모이드를 취하고, 같은 값으로 tanh를 취해준 다음 Hadamard product연산을 한 값
-- i<sub>t</sub> 범위는 0~1, g<sub>t</sub>의 범위는 -1~1 이기 때문에 각각 강도와 방향을 의미함
+- i<sub>t</sub> 범위는 0에서 1, g<sub>t</sub>의 범위는 -1에서 1 이기 때문에 각각 강도와 방향을 의미함
 - i<sub>t</sub> = h<sub>t-1</sub>과 x<sub>t</sub>을 받아 시그모이드를 취한 값으로, 현재정보를 저장할지 말지를 의미함.
 - g<sub>t</sub> = h<sub>t-1</sub>과 x<sub>t</sub>을 받아 하이퍼볼릭탄젠트를 취한 값으로, 현재정보를 얼마나 더할지, scale역할을 함.
 
@@ -31,7 +31,7 @@
 <img src="https://user-images.githubusercontent.com/33839093/108021260-7f036680-7061-11eb-9f93-2b5ed2f1f00e.png">
 
 - h<sub>t-1</sub>과 x<sub>t</sub>값이 들어와 시그모이드를 취한 값 f<sub>t</sub> = 현재정보를 저장할지 말지를 의미함.
-- 시그모이드 함수의 출력값은 0~1사이이기 때문에 값이 0에 가까울수록 정보가 많이 삭제됨, 1에 가까울수록 정보를 온전히 기억한다.
+- 시그모이드 함수의 출력값은 0에서 1사이이기 때문에 값이 0에 가까울수록 정보가 많이 삭제됨, 1에 가까울수록 정보를 온전히 기억한다.
 
 ### cell state(장기 상태)
 <img src="https://user-images.githubusercontent.com/33839093/108021271-8591de00-7061-11eb-9359-c890682058b6.png">
