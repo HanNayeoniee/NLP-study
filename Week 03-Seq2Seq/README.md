@@ -11,8 +11,7 @@
 > - Seq2Seq : 하나의 sequence에서 다른 sequence로 번역을 하겠다, sequence는 일반적으로 하나의 문장을 의미함 (ex. 한국어를 영어로 바꾸는 것)
 > 1) 일반적으로 입력 토큰으로 단어를 사용함
 > 2) 딥러닝 모델은 문자보다 숫자를 잘 처리하기 때문에 모든 단어(토큰)은 워드 임베딩을 통해 임베딩 벡터로 변환됨
-> 3) Encoder : 연속적인 각각의 단어(guten, abend)가 들어가 고정된 크기의 context vector를 만듦
-> - 입력 sequence에 대한 정보를 적절히 표현할 수 있는 vector를 반환함
+> 3) Encoder : 연속적인 각각의 단어(guten, abend)가 들어가 고정된 크기의 context vector를 만듦, 입력 sequence에 대한 정보를 적절히 표현할 수 있는 vector를 반환함
 > 4) Decoder : context vector를 번역 대상 나라의 말로 변환함
 > - context vector가 bottle neck이 될 수 있지만 당시에는 Seq2Seq로도 성능을 많이 향상시킴
 > - Encoder의 마지막 hidden state만을 context vector로 사용함 (encoder와 decoder는 서로 다른 파라미터를 가짐)
