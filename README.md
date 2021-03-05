@@ -14,3 +14,7 @@
 - [LSTM_samsung.ipynb](https://github.com/HanNayeoniee/NLP-study/blob/main/Week%2002-LSTM/LSTM_samsung.ipynb) : LSTM으로 삼성전자 주가 예측하기
 
 <br>
+
+### 🐥 Week 03-Seq2Seq
+- [Week_03-Seq2Seq](https://github.com/HanNayeoniee/NLP-study/tree/main/Week%2003-Seq2Seq)
+- [Sequence to Sequence with LSTM Tutorial.ipynb](https://github.com/HanNayeoniee/NLP-study/blob/main/Week%2003-Seq2Seq/Sequence_to_Sequence_with_LSTM_Tutorial.ipynb) : LSTM을 활용해 Seq2Seq 구현하기 
