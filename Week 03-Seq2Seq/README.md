@@ -32,3 +32,10 @@
 > - 보통 RNN에서는 (t-1)번째 출력값을 t번째 입력값으로 넣어 은닉 상태를 얻음
 > - 하지만, teacher forcing을 사용하면 (t-1)번째 정답을 t번째 입력값으로 넣어 은닉 상태를 얻음
 > - 잘못된 예측값을 입력값으로 넣어 또 다른 예측을 하면, 예측이 계속 틀리는 경우를 만들지 않기 위해 사용함
+
+### References
+딥러닝 기계번역: Seq2Seq (https://www.youtube.com/watch?v=4DzKM0vgG1Y)
+
+딥러닝을 이용한 자연어처리 입문 (https://wikidocs.net/24996)
+
+시퀀스 투 시퀀스+어텐션 (https://www.youtube.com/watch?v=WsQLdu2JMgI&list=PLVNY1HnUlO26qqZznHVWAqjS1fWw0zqnT&index=14)
