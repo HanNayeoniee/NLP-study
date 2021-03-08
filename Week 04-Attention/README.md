@@ -3,11 +3,11 @@
 ### Seq2seq(encoder-decoder) model
 <img src="https://user-images.githubusercontent.com/33839093/110282162-5a2b5f00-8021-11eb-9c4b-d0bd65e7f831.png" width="- 600">
 
-- 단어별로 번역하는건 별로 좋은 방법이 아님: 예) "I love you"를 한국어로 번역하면 "나는 너를 사랑해"이지만, 이를 단어 기준으로 번역하면 'I-나', 'love-너를', 'you-사랑해'로 번역되는 오류가 있기 때문
-- encoder : 각 단어를 순차적으로 받아 context vector를 만듦
-- decoder : context vector로부터 기계번역을 시작
-- 문제점 : context vector는 고정된 크기의 벡터이기 때문에 문장이 길어지거나 context vector의 크기가 충분하지 않으면 입력 단어의 모든 의미를 함축하기 어려움
-- 해결 방법 : attention mechanism
+> - 단어별로 번역하는건 별로 좋은 방법이 아님: 예) "I love you"를 한국어로 번역하면 "나는 너를 사랑해"이지만, 이를 단어 기준으로 번역하면 'I-나', 'love-너를', 'you-사랑해'로 번역되는 오류가 있기 때문
+> - encoder : 각 단어를 순차적으로 받아 context vector를 만듦
+> - decoder : context vector로부터 기계번역을 시작
+> - 문제점 : context vector는 고정된 크기의 벡터이기 때문에 문장이 길어지거나 context vector의 크기가 충분하지 않으면 입력 단어의 모든 의미를 함축하기 어려움
+> - 해결 방법 : attention mechanism
 
 ### Attention Mechanism
 <img src="https://user-images.githubusercontent.com/33839093/110282637-2ac92200-8022-11eb-99df-ed670786e24a.png" widt="600">
@@ -42,7 +42,6 @@
 ### 중요
 	- Attention weight를 통해 encoder에서 나온 state중에 어디에 집중할지 결정함
 	- Decoding할 때마다 context vector가 달라짐
-
 	- Teacher forcing : 첫번째 decoding 결과가 '난'이 아니라 '너'처럼 틀린 prediction을 하는 경우에는 정답인 '난'을 넣어서 학습시킴
 
 ### References
