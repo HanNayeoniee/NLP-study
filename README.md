@@ -18,3 +18,8 @@
 ### 🐥 Week 03-Seq2Seq
 - [Week_03-Seq2Seq](https://github.com/HanNayeoniee/NLP-study/tree/main/Week%2003-Seq2Seq)
 - [Sequence to Sequence with LSTM Tutorial.ipynb](https://github.com/HanNayeoniee/NLP-study/blob/main/Week%2003-Seq2Seq/Sequence_to_Sequence_with_LSTM_Tutorial.ipynb) : LSTM을 활용해 Seq2Seq 구현하기 
+
+<br>
+
+### 🐫 Week 04-Attention Mechanism
+- [Week_04-Attention](https://github.com/HanNayeoniee/NLP-study/blob/main/Week%2004-Attention/README.md)
