@@ -37,6 +37,8 @@
 
 - step 3
 <img src="https://user-images.githubusercontent.com/33839093/110283282-27826600-8023-11eb-8910-c7f81deb8426.png" width="600">
+
+> - dh2, h1, h2, h3값을 사용해 attention weight를 계산
 > - 3번째 attention weight에서는 'love'의 값이 0.95로 많이 집중하는 것을 볼 수 있으며 '사랑해'를 출력함
 
 ### 중요
