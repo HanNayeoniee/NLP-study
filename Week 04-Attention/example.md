@@ -1,4 +1,4 @@
-# 🐫 Week 04-Attention Mechanism
+# 🐫 Week 04-Attention 예시
 
 ### Seq2seq(encoder-decoder) model
 <img src="https://user-images.githubusercontent.com/33839093/110282162-5a2b5f00-8021-11eb-9c4b-d0bd65e7f831.png" width="- 600">
@@ -47,6 +47,6 @@
 	- Teacher forcing : 첫번째 decoding 결과가 '난'이 아니라 '너'처럼 틀린 prediction을 하는 경우에는 정답인 '난'을 넣어서 학습시킴
 
 ### References
-- 논문: Neural machine translation by jointly learning to align and translate
+- Neural machine translation by jointly learning to align and translate (https://arxiv.org/abs/1409.0473)
 - 딥러닝을 이용한 자연어처리 입문 (https://wikidocs.net/24996)
 - 시퀀스 투 시퀀스+어텐션 강의 (https://www.youtube.com/watch?v=WsQLdu2JMgI)
