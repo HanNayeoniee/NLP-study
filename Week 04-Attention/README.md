@@ -22,9 +22,9 @@
 > - 에너지 : 인코더의 어느 입력시간 스텝에 집중할지 점수화(수치화), 디코더가 출력값을 만들 때마다 모든 j를 고려함
 > - S : 디코더가 출력한 hidden state
 > - h : 인코더 부분 각각의 hidden state
-> 👉 디코더가 이전에 출력한 hidden state(S(i-1))와 인코더의 모든 출력값(h_j)를 통해 에너지 값을 구함
-> 👉 어떤 hidden state(h값)와 가장 연관이 많은지를 에너지 값으로 알 수 있음
-> 👉 attention score를 구하는 [함수](https://wikidocs.net/22893)에는 여러 종류가 있음, [Luong](https://hcnoh.github.io/2019-01-01-luong-attention), [Bahdanau](https://hcnoh.github.io/2018-12-11-bahdanau-attention)가 유명함
+> - 👉 디코더가 이전에 출력한 hidden state(S(i-1))와 인코더의 모든 출력값(h_j)를 통해 에너지 값을 구함
+> - 👉 어떤 hidden state(h값)와 가장 연관이 많은지를 에너지 값으로 알 수 있음
+> - 👉 attention score를 구하는 [함수](https://wikidocs.net/22893)에는 여러 종류가 있음, [Luong](https://hcnoh.github.io/2019-01-01-luong-attention), [Bahdanau](https://hcnoh.github.io/2018-12-11-bahdanau-attention)가 유명함
 
 2) 가중치 alpha_ij (attention distribution) 구하기
 > - 가중치 : 에너지값에 softmax를 취해 얻은 확률값으로 0-1사이의 값을 가지며, 어떤 hidden state와 연관성이 높은지 알 수 있음
@@ -32,14 +32,15 @@
 3) context vector Ci (attention output) 구하기
 > - 가중치(alpha_ij)가 반영된 hidden state값으로, 입력 sequence의 weighted sum
 > - 위의 그림에서 a_t,1 a_t,2 a_t,3 a_t,T에 해당함
-> 👉 가중치가 반영된 인코더값의 출력값을 구할 수 있음
+> - 👉 가중치가 반영된 인코더값의 출력값을 구할 수 있음
 
 4) decoder hidden state Si 구하기
 <img src="https://user-images.githubusercontent.com/33839093/110446407-7a7f1a80-8102-11eb-8b5b-06afdf5f73cf.png" width="350">
+
 > - S는 decoder의 hidden state, Y는 decoder의 output에 해당함
 > - Attention을 적용하면 decoder가 매번 단어를 예측?할 때마다 context vector를 구하기 때문에 C가 아닌 Ci가 사용됨
 > - 현재의 hidden state인 Si를 만들기 위해서는 이전에 decoder가 출력한 hidden state값(S(i-1))과 인코더의 모든 hidden state(h1, h2, h3, ...hT)을 묶어서 에너지 값을 구한 뒤에 softmax를 취해 비율값(a_t,1 a_t,2 … a_t.3)을 구할 수 있음
-> 👉 1, 2단계에서 구한 값은 스칼라 값이고 3, 4단계에서 구한 값은 벡터이다.
+> - 👉 1, 2단계에서 구한 값은 스칼라 값이고 3, 4단계에서 구한 값은 벡터이다.
 
 ### 순전파/ forward 과정
 <img src="https://user-images.githubusercontent.com/33839093/110447074-350f1d00-8103-11eb-967e-44808f595a31.png" width="450">
@@ -52,16 +53,16 @@
 
 > - 단어(토큰) 4개가 주어진 예제
 > - 각 단어는 임베딩을 거쳐 hidden state(h1, h2, h3, h4)값, 벡터 형태임
-> - 1) Attention score 구하기 : alignment model을 통해 e_21, e_22, e_23, e_24를 구할 수 있음
+> - 1. attention score 구하기 : alignment model을 통해 e_21, e_22, e_23, e_24를 구할 수 있음
 S1까지 처리했으므로 현재 디코더의 인덱스인 i=2에 해당함
-> - 2) attention distribution 구하기 : attention score에 softmax를 적용해 alpha_21, alpha_22, alpha_23, alpha_24를 구할 수 있음
-> - 3) Attention output 구하기 : 앞에서 구한 가중치 alpha값들과 hidden state(h1, h2, h3, h4)를 곱해 context vector를 구할 수 있음
-> - 4) Decoder hidden state 구하기
+> - 2. attention distribution 구하기 : attention score에 softmax를 적용해 alpha_21, alpha_22, alpha_23, alpha_24를 구할 수 있음
+> - 3. attention output 구하기 : 앞에서 구한 가중치 alpha값들과 hidden state(h1, h2, h3, h4)를 곱해 context vector를 구할 수 있음
+> - 4. decoder hidden state 구하기
 S2 = f(S1, Y1, C2)에 따라 위에서 계산한 context vector인 C2와 주어진 S1, Y1값으로 S2를 구할 수 있음
 
 <img src="https://user-images.githubusercontent.com/33839093/110447085-37717700-8103-11eb-8ac5-be4e3f93d956.png">
 
-> - 5) Decoder의 output값 구하기
+> - 5. Decoder의 output값 구하기
 > Y2 = g(S2, C2)에 따라 전 단계에서 계산한 S2와 context vector C2로 Y2값을 구할 수 있음
 
 ### Attention 시각화
