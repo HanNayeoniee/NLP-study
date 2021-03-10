@@ -60,7 +60,7 @@ S1까지 처리했으므로 현재 디코더의 인덱스인 i=2에 해당함
 > - 4. decoder hidden state 구하기
 S2 = f(S1, Y1, C2)에 따라 위에서 계산한 context vector인 C2와 주어진 S1, Y1값으로 S2를 구할 수 있음
 
-<img src="https://user-images.githubusercontent.com/33839093/110447085-37717700-8103-11eb-8ac5-be4e3f93d956.png">
+<img src="https://user-images.githubusercontent.com/33839093/110447085-37717700-8103-11eb-8ac5-be4e3f93d956.png" >
 
 > - 5. Decoder의 output값 구하기
 > Y2 = g(S2, C2)에 따라 전 단계에서 계산한 S2와 context vector C2로 Y2값을 구할 수 있음
