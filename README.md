@@ -21,5 +21,8 @@
 
 <br>
 
-### 🐫 Week 04-Attention Mechanism
+### 🐫 Week 04-Attention
 - [Week_04-Attention](https://github.com/HanNayeoniee/NLP-study/blob/main/Week%2004-Attention/README.md)
+- [Seq2Seq with Attention.ipynb](https://github.com/HanNayeoniee/NLP-study/blob/main/Week%2004-Attention/Seq2Seq_with_Attention.ipynb) : Seq2Seq에 attention 적용하기
+
+<br>
